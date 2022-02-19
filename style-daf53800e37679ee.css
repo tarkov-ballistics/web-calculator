@@ -81,14 +81,18 @@ a:hover {
 header,
 main,
 footer {
-  max-width: 60rem;
+  max-width: 90rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 main {
+  position: relative;
+  display: flex;
   margin-top: 3rem;
   min-height: 30rem;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 665px) {
@@ -111,7 +115,7 @@ header {
 }
 
 header .title {
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
   box-sizing: border-box;
   padding: 0 1rem;
 }
@@ -124,8 +128,8 @@ header .title a {
 
 header .title .logo {
   background: url("../images/logo.svg") no-repeat center;
-  width: 6rem;
-  height: 3rem;
+  width: 7rem;
+  height: 3.5rem;
 }
 
 header h1 {
@@ -133,8 +137,9 @@ header h1 {
 }
 
 .input {
-  margin: 0 auto;
-  margin-bottom: 2rem;
+  flex: 30%;
+  /* margin: 0 auto; */
+  /* margin-bottom: 2rem; */
 }
 
 .input form {
@@ -149,7 +154,8 @@ header h1 {
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
+  margin-bottom: 0.6rem;
   background-color: var(--bg-sec-color);
   /* border: 0.01rem solid var(--border-color); */
 }
@@ -203,12 +209,23 @@ header h1 {
   }
 }
 
+.content {
+  top: 0;
+  position: sticky;
+  flex: 60%;
+  height: fit-content;
+}
+
+.range-card {
+  width: 100%;
+}
+
 table {
   border-collapse: collapse;
 }
 
 .range-table {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   margin: 0 auto;
   min-width: 35rem;
@@ -222,8 +239,8 @@ table {
 }
 
 thead {
-  top: 0;
-  position: sticky;
+  /* top: 0; */
+  /* position: sticky; */
   background-color: var(--font-main-color);
   color: var(--bg-main-color);
 }
