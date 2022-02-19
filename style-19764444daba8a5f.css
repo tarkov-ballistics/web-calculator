@@ -203,17 +203,17 @@ header h1 {
   background-color: var(--font-sec-color);
 }
 
-@media only screen and (max-width: 665px) {
-  .table-wrapper {
-    overflow-x: auto;
-  }
-}
-
 .content {
   top: 0;
   position: sticky;
   flex: 60%;
   height: fit-content;
+}
+
+@media only screen and (max-width: 665px) {
+  .content {
+    overflow-x: auto;
+  }
 }
 
 .range-card {
