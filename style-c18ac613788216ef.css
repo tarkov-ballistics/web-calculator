@@ -200,7 +200,7 @@ header h1 {
 
 .input input[type="submit"]:hover {
   color: var(--bg-main-color);
-  background-color: var(--font-sec-color);
+  background-color: var(--font-main-color);
 }
 
 .content {
@@ -225,7 +225,7 @@ table {
 }
 
 .range-table {
-  /* position: relative; */
+  position: relative;
   width: 100%;
   margin: 0 auto;
   min-width: 35rem;
@@ -239,8 +239,8 @@ table {
 }
 
 thead {
-  /* top: 0; */
-  /* position: sticky; */
+  top: 0;
+  position: sticky;
   background-color: var(--font-main-color);
   color: var(--bg-main-color);
 }
