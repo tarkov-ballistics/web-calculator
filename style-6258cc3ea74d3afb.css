@@ -102,7 +102,7 @@ main {
     padding: 0 0.5rem;
   }
   main {
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -134,6 +134,38 @@ header .title .logo {
 
 header h1 {
   margin: 0 1.4rem;
+}
+
+header nav .menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+header nav .submenu {
+  position: relative;
+  cursor: default;
+}
+
+header nav .submenu,
+header nav .menu > li > a:not(.image) {
+  padding: 0.5rem;
+  color: var(--bg-main-color);
+  background-color: var(--font-main-color);
+  transition: background-color 200ms linear;
+}
+
+header nav .submenu:hover,
+header nav .menu > li > a:not(.image):hover {
+  background-color: var(--font-sec-color);
+}
+
+header nav .menu > li > a {
+  display: block;
+  color: var(--bg-main-color);
 }
 
 .input {
@@ -327,4 +359,71 @@ main .loading {
   margin: 0 auto;
   margin-top: 5rem;
   text-align: center;
+}
+
+.modal {
+  box-sizing: border-box;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  background-color: rgba(8, 8, 8, 0.93);
+  backdrop-filter: blur(5px);
+}
+
+.modal.show {
+  display: flex;
+}
+
+.settings {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.settings .category {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 0.6rem;
+  background-color: var(--bg-sec-color);
+  /* border: 0.01rem solid var(--border-color); */
+}
+
+.settings .category-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.settings label {
+  margin-right: 1rem;
+}
+
+/* .settings .category .field {
+  width: 12rem;
+}
+
+.settings .category .field > * {
+  width: 100%;
+} */
+
+.settings input[type="submit"] {
+  margin-top: 1rem;
+  width: 100%;
+  line-height: 3rem;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: var(--bg-sec-color);
+  border: none;
+  transition: background-color 200ms linear, color 200ms linear;
+}
+
+.settings input[type="submit"]:hover {
+  color: var(--bg-main-color);
+  background-color: var(--font-main-color);
 }
