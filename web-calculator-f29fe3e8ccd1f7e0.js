@@ -649,11 +649,11 @@ function __wbg_get_imports() {
         const ret = makeMutClosure(arg0, arg1, 9, __wbg_adapter_16);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper892 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper894 = function(arg0, arg1, arg2) {
         const ret = makeMutClosure(arg0, arg1, 9, __wbg_adapter_19);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper1668 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper1670 = function(arg0, arg1, arg2) {
         const ret = makeClosure(arg0, arg1, 9, __wbg_adapter_22);
         return addHeapObject(ret);
     };
@@ -696,7 +696,7 @@ async function __wbg_init(input) {
     if (wasm !== undefined) return wasm;
 
     if (typeof input === 'undefined') {
-        input = new URL('web-calculator-8c60e1afb2f1107_bg.wasm', import.meta.url);
+        input = new URL('web-calculator-f29fe3e8ccd1f7e0_bg.wasm', import.meta.url);
     }
     const imports = __wbg_get_imports();
 
