@@ -210,7 +210,7 @@ function addBorrowedObject(obj) {
 }
 function __wbg_adapter_16(arg0, arg1, arg2) {
     try {
-        wasm.wasm_bindgen__convert__closures__invoke1_mut_ref__hd2da0a7294004b2b(arg0, arg1, addBorrowedObject(arg2));
+        wasm.wasm_bindgen__convert__closures__invoke1_mut_ref__h666992024a14c3c8(arg0, arg1, addBorrowedObject(arg2));
     } finally {
         heap[stack_pointer++] = undefined;
     }
@@ -243,7 +243,7 @@ function makeClosure(arg0, arg1, dtor, f) {
 }
 function __wbg_adapter_22(arg0, arg1, arg2) {
     try {
-        wasm.wasm_bindgen__convert__closures__invoke1_ref__hf7a438cb9b4216c8(arg0, arg1, addBorrowedObject(arg2));
+        wasm.wasm_bindgen__convert__closures__invoke1_ref__h6810eceb72e50d63(arg0, arg1, addBorrowedObject(arg2));
     } finally {
         heap[stack_pointer++] = undefined;
     }
@@ -645,7 +645,7 @@ function __wbg_get_imports() {
     imports.wbg.__wbg_removeAttribute_d8404da431968808 = function() { return handleError(function (arg0, arg1, arg2) {
         getObject(arg0).removeAttribute(getStringFromWasm0(arg1, arg2));
     }, arguments) };
-    imports.wbg.__wbindgen_closure_wrapper184 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper182 = function(arg0, arg1, arg2) {
         const ret = makeMutClosure(arg0, arg1, 9, __wbg_adapter_16);
         return addHeapObject(ret);
     };
@@ -696,7 +696,7 @@ async function __wbg_init(input) {
     if (wasm !== undefined) return wasm;
 
     if (typeof input === 'undefined') {
-        input = new URL('web-calculator-f29fe3e8ccd1f7e0_bg.wasm', import.meta.url);
+        input = new URL('web-calculator-660ff32adf65479a_bg.wasm', import.meta.url);
     }
     const imports = __wbg_get_imports();
 
